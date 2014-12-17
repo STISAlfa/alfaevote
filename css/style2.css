@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2014, 12:24:26 AM
+    Author     : Thosan Girisona S
+*/
+
+#sider{
+    background: white;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 200px;
+}
+
+#nim h4{
+    position: fixed;
+    color: white;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+#nim h3{
+    position: fixed;
+    color: white;
+    margin-top: 7%;
+    margin-left: 2%;
+}
+
+#nim{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+.kotakcalon{
+    color: #666666;
+    float: left;
+    margin-left: 5%;
+    background-color: #666666;
+    padding: 1%;
+}
+
+.kotakcalon:hover{
+    color: #666666;
+    float: left;
+    margin-left: 5%;
+    background-color: #666666;
+    padding: 1%;
+    opacity: 0.8;
+}
+
+#sider form,h3{
+    text-align: center;
+    margin-left: 0px;
+}
+
+.kotakcalon img{
+    width: 128px;
+}
+
+.kotakcalon button{
+    margin-top: 3%;
+}
+
+
+#container2{
+    color : white;
+    margin-left: 16%;   
+    text-align: center;
+}
+
+nav{
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 2% 2% auto;
+}
+
+nav ul li{
+    float: left;
+    display: inline;
+    margin: 0.7% 0 0 0.7%;
+}

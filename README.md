@@ -1,4 +1,4 @@
 alfaevote
 =========
 
-alfa-evote
+berikut pak STISAlfa

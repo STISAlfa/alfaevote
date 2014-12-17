@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 4, 2014, 8:10:48 PM
+    Author     : Thosan Girisona S
+*/
+
+
+@font-face {   font-family: 'Glyphicons Halflings';   
+    src: url('/fonts/glyphicons-halflings-regular.eot');   
+    src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+    url('/fonts/glyphicons-halflings-regular.woff') format('woff'),  
+    url('/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+    url('/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg'); } 
+body{
+    background-image: url(../img/footer_lodyas.png);
+}
+
+#containers{
+    margin-top: 10%;
+}
+
+
+#iconlog{
+    float: left;
+    clear: both;
+}
+
+#foter{
+    color: white;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+#buton{
+}
+
+#formuser{
+    margin-bottom: 10px;
+}
+
