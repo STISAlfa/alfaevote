@@ -45,12 +45,7 @@ and open the template in the editor.
     padding: 1%;
 }
 
-.kotakcalon:hover{
-    color: #666666;
-    float: left;
-    margin-left: 5%;
-    background-color: #666666;
-    padding: 1%;
+.kotakcalon img:hover{
     opacity: 0.8;
 }
 
