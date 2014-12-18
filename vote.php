@@ -32,45 +32,8 @@ and open the template in the editor.
     
   </head>
   <body>
-      <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span2" id="sider">
-            <div id="nim">
-                <img src="img/footer_lodyas.png" style="
-                   width: 190px;
-                   height: 190px;
-                   text-align: left;    
-                   vertical-align: middle;
-                   position: fixed;"/>
-                <h4>:NIM Anda :</h4>
-                <h3>:XX.XXXXX :</h3>
-            </div>
-            <h2></h2>
-            <h3>SEMA-STIS</h3>
-            <form role="form">
-                <label class="radio">
-                  <input type="radio" name="optradio">RisFir
-                </label>
-                <label class="radio">
-                  <input type="radio" name="optradio">DiDev
-                </label>
-            </form>
-            <h3>Tingkat X</h3>
-            <form role="form" >
-                <label class="radio" value="tingkat1">
-                  <input type="radio" name="optradio">Option 1
-                </label>
-                <label class="radio" value="tingkat2">
-                  <input type="radio" name="optradio">Option 2
-                </label>
-                <label class="radio" value="tingkat3">
-                  <input type="radio" name="optradio">Option 3
-                </label>
-            </form>
-            
-        </div>
           
-          <div class="span10" id="container2">
+          <div class="span12" id="container2">
             <div><h1 class="panel-heading" > Calon Ketua SEMA STIS</h1><hr></div>
             <form role="form" >
                 <label class="radio-inline" value="sema1">
@@ -172,7 +135,7 @@ and open the template in the editor.
                 </label>
             </form>  
           </div>
-          <div class="span10" id="container2">
+          <div class="span12" id="container2">
             <div><h1 class="panel-heading" > Calon Ketua Tingkat STIS</h1><hr></div>
             <form role="form" >
                 <label class="radio-inline" value="sema1">
@@ -318,13 +281,12 @@ and open the template in the editor.
                 </label>
             </form> 
           </div>
-          <div class="span10" id="container2">
+          
+          <div class="span12" id="container2">
               <form>
                   <button type="submit" class="btn-success btn-lg">SUBMIT</button>
               </form>
           </div>
-        </div>
-    </div>
     <footer id="foter">
         <b>&COPY;STISAlfa 2014</b>
     </footer>

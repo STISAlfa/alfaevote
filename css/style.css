@@ -17,6 +17,7 @@ and open the template in the editor.
     url('/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg'); } 
 body{
     background-image: url(../img/footer_lodyas.png);
+    margin-left: 4%;
 }
 
 #containers{
