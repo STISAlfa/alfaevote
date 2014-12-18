@@ -46,7 +46,7 @@ and open the template in the editor.
                 <h3>:XX.XXXXX :</h3>
             </div>
             <h2></h2>
-            <h3>Ketua SEMA-STIS</h3>
+            <h3>SEMA-STIS</h3>
             <form role="form">
                 <label class="radio">
                   <input type="radio" name="optradio">RisFir
@@ -55,21 +55,30 @@ and open the template in the editor.
                   <input type="radio" name="optradio">DiDev
                 </label>
             </form>
-            <h3>Ketua Tingkat X</h3>
+            <h3>Tingkat X</h3>
             <form role="form" >
-                <label class="radio">
+                <label class="radio" value="tingkat1">
                   <input type="radio" name="optradio">Option 1
                 </label>
-                <label class="radio">
+                <label class="radio" value="tingkat2">
                   <input type="radio" name="optradio">Option 2
+                </label>
+                <label class="radio" value="tingkat3">
+                  <input type="radio" name="optradio">Option 3
                 </label>
             </form>
             
         </div>
+          
           <div class="span10" id="container2">
             <div><h1 class="panel-heading" > Calon Ketua SEMA STIS</h1><hr></div>
-            <div class="kotakcalon sema1">
-                <img src="img/person_dummy.jpg" onclick="pilihsema(1)"><br>
+            <form role="form" >
+                <label class="radio-inline" value="sema1">
+                  <input type="radio" name="optradio"><div class="kotakcalon sema1">
+                      <div class="img">
+                          <img src="img/person_dummy.jpg" onclick="pilihsema(1)">
+                          <div class="overlay"></div>
+                      </div>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                   VisiMisi
                 </button>
@@ -113,7 +122,9 @@ and open the template in the editor.
                   </div>
                 </div> 
             </div>
-            <div class="kotakcalon sema2">
+                </label>
+                <label class="radio-inline" value="sema2">
+                  <input type="radio" name="optradio"><div class="kotakcalon sema2">
                 <img src="img/person_dummy.jpg" onclick="pilihsema(2)"><br>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                   VisiMisi
@@ -158,10 +169,14 @@ and open the template in the editor.
                   </div>
                 </div> 
             </div>
+                </label>
+            </form>  
           </div>
           <div class="span10" id="container2">
-            <div><h1 class="panel-heading" > Calon Ketua SEMA STIS</h1><hr></div>
-            <div class="kotakcalon tingkat1">
+            <div><h1 class="panel-heading" > Calon Ketua Tingkat STIS</h1><hr></div>
+            <form role="form" >
+                <label class="radio-inline" value="sema1">
+                  <input type="radio" name="optradio"><div class="kotakcalon tingkat1">
                 <img src="img/person_dummy.jpg" onclick="pilihtingkat(1)"><br>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                   VisiMisi
@@ -206,7 +221,9 @@ and open the template in the editor.
                   </div>
                 </div> 
             </div>
-            <div class="kotakcalon tingkat2">
+                </label>
+                <label class="radio-inline" value="sema2">
+                  <input type="radio" name="optradio"><div class="kotakcalon tingkat2">
                 <img src="img/person_dummy.jpg" onclick="pilihtingkat(2)"><br>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                   VisiMisi
@@ -251,7 +268,9 @@ and open the template in the editor.
                   </div>
                 </div> 
             </div>
-            <div class="kotakcalon tingkat3">
+                </label>
+                <label class="radio-inline" value="sema2">
+                  <input type="radio" name="optradio"><div class="kotakcalon tingkat3">
                 <img src="img/person_dummy.jpg" onclick="pilihtingkat(3)"><br>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                   VisiMisi
@@ -296,14 +315,16 @@ and open the template in the editor.
                   </div>
                 </div> 
             </div>
+                </label>
+            </form> 
           </div>
-      </div>
-</div>
-
-      
-      <div>
-          
-      </div>
+          <div class="span10" id="container2">
+              <form>
+                  <button type="submit" class="btn-success btn-lg">SUBMIT</button>
+              </form>
+          </div>
+        </div>
+    </div>
     <footer id="foter">
         <b>&COPY;STISAlfa 2014</b>
     </footer>

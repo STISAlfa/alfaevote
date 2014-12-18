@@ -49,13 +49,13 @@ and open the template in the editor.
     opacity: 0.8;
 }
 
+.kotakcalon img{
+    width: 128px;
+}
+
 #sider form,h3{
     text-align: center;
     margin-left: 0px;
-}
-
-.kotakcalon img{
-    width: 128px;
 }
 
 .kotakcalon button{
@@ -85,4 +85,17 @@ nav ul li{
     float: left;
     display: inline;
     margin: 0.7% 0 0 0.7%;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+label > input:checked + div{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+#container2 form{
+    margin-top: 2%;
 }
