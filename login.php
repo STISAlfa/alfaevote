@@ -4,8 +4,14 @@ include("conn.php");
 session_start();
 $error='';
 
+function redirect($page) {
+    header('Location: ' . $page);
+    exit;
+}
+
 
 if (isset($_POST['password'])) {
+    
 
     $password = htmlentities((trim($_POST['password'])));
 
@@ -22,10 +28,9 @@ if (isset($_POST['password'])) {
             $status = $row['status'];
             $nim = $row['nim'];
         }
-        //echo '<script language="javascript">alert("berhasil login' . $flag . '")</script>;';
-
+        
         if ($status=="sudah") {
-            header('location: uwes.php');
+            redirect("uwes.php");
         }
         else{
 
@@ -35,10 +40,11 @@ if (isset($_POST['password'])) {
             $_SESSION['nim'] = $nim;
 
 
-            $ambil=mysql_query("select * from pemilih where username='$username'");
+            $ambil=mysql_query("select * from pemilih where id_siswa='$id_siswa'");
+
             $cek_ambil=mysql_num_rows($ambil);
             if(empty($cek_ambil)){
-                header('location : vote.php');
+                redirect("vote.php");
             }
             else{
                 while($row=mysql_fetch_array($ambil)){ 
@@ -48,11 +54,11 @@ if (isset($_POST['password'])) {
                                                                     
                 if($sema=='belum' && $tingkatst=='belum' ){
 
-                    header('Location : vote.php');                                    
+                    redirect("vote.php");                                    
                 
                 }
                 else if( $sema=='sudah' && $tingkatst=='belum' ){ 
-                    header('Location : ketuatingkat.php');
+                    redirect("ketuatingkat.php");
                 }
             }
             
@@ -61,4 +67,4 @@ if (isset($_POST['password'])) {
 } else
     unset($_POST['password']);
     mysql_close($connect);
-=-?>
+?>
