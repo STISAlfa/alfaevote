@@ -1,0 +1,17 @@
+<?php
+	
+	function redirect($page) {
+	    header('Location: ' . $page);
+	    exit;
+	}
+
+	if(isset($_POST['sema'],$_POST['ketuatingkat'])){
+		
+	}
+	else{
+		header("refresh:0.01; url=vote.php");
+		echo "<script>alert('error')</script>";	
+
+	}
+	
+?>
